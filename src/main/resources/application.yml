@@ -8,6 +8,7 @@ spring:
     password:
     driver-class-name: org.h2.Driver
 
+
   jpa:
     hibernate:
       ddl-auto: create
@@ -18,3 +19,7 @@ spring:
         logging.level:
           org.hibernate.SQL: debug
         #  org.hibernate.type: trace
+  data:
+    web:
+      pageable:
+        one-indexed-parameters: true
